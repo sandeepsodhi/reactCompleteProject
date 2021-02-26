@@ -1,0 +1,15 @@
+npm install
+
+then npm start
+
+npm create react 
+
+//npm install create-react-app //for creating react apps
+
+npm create-react-app appName
+
+
+
+npm install --save axios  //for axios package
+
+//npm run eject for themes not required
