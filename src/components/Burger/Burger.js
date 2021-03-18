@@ -1,9 +1,10 @@
 import React from 'react';
+
 import classes from './Burger.css';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 
 const burger = (props) => {
-
+    console.log(props);
     //converting object of key value pair into an array of buregerIngredients
     let transformedIngredients = Object.keys(props.ingredients)
             .map(igKey => {

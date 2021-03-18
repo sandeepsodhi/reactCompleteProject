@@ -7,9 +7,9 @@ import Checkout from './containers/Checkout/Checkout';
 
 class App extends Component {
 
-  state = {
-    show : true
-  }
+  // state = {
+  //   show : true
+  // }
 
   //just testing unmount eject code
   // componentDidMount(){

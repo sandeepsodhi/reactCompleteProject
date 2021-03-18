@@ -7,6 +7,7 @@ class OrderSummary extends Component {
     //This could be a functional component, doesn't have to be class
 
     componentWillUpdate(){
+        console.log(this.props);
         console.log('component will update order summary');
     }
 
