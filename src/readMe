@@ -15,3 +15,5 @@ npm install --save axios  //for axios package
 //npm run eject for themes not required
 
 npm install --save react-router-dom
+
+npm install --save redux react-redux
