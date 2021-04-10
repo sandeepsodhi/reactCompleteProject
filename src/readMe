@@ -17,3 +17,10 @@ npm install --save axios  //for axios package
 npm install --save react-router-dom
 
 npm install --save redux react-redux
+
+installed extension Redux DevTools for chrome
+
+npm install --save redux-thunk
+
+add this line with redux store to enable redux dev tools
+window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
