@@ -6,21 +6,21 @@ export const purchaseBurgerSuccess = (id, orderData) => {
         type: actionsTypes.PURCHASE_BURGER_SUCCESS,
         orderId: id,
         orderData: orderData
-    }
+    };
 };
 
 export const purchaseBurgerFail = (error) => {
     return {
         type: actionsTypes.PURCHASE_BURGER_FAIL,
         error: error
-    }
+    };
 };
 
 export const purchaseBurgerStart = () => {
     return {
         type: actionsTypes.PURCHASE_BURGER_START
-    }
-}
+    };
+};
 
 export const purchaseBurger = (orderData, token) => {
     return dispatch => {
@@ -33,7 +33,7 @@ export const purchaseBurger = (orderData, token) => {
             .catch(error => {
                 dispatch(purchaseBurgerFail(error));
         });
-    }
+    };
 };
 
 export const purchaseInit = () => {
@@ -64,7 +64,7 @@ export const fetchOrders = (token, userId) => {
     return dispatch => {
         dispatch(fetchOrdersStart());
         const queryParams = '?auth=' + token + '&orderBy="userId"&equalTo="' + userId + '"';
-        axios.get('/orders.json?auth=' + queryParams)
+        axios.get('/orders.json' + queryParams)
         .then(res => {
             const fetchedOrders = [];
             for(let key in res.data){
@@ -78,5 +78,5 @@ export const fetchOrders = (token, userId) => {
         .catch(err => {
             dispatch(fetchOrdersFail(err));
         });
-    }
-}
+    };
+};

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import {Route, Switch , withRouter, Redirect} from 'react-router-dom';
 import  { connect } from 'react-redux';
 
@@ -39,7 +39,7 @@ class App extends Component {
     if(this.props.isAuthenticated){
       routes = (
         <Switch>
-          <Route path="/checkout" component={Checkout} />
+          <Route path="/checkout" exact component={Checkout} />
           <Route path="/orders" component={Orders} />
           <Route path="/logout" component={Logout} />
           <Route path="/" exact component={BurgerBuilder} />
@@ -51,7 +51,7 @@ class App extends Component {
     return (
       <div>
         <Layout>
-          {routes}
+           {routes}
         </Layout>
       </div>
     );

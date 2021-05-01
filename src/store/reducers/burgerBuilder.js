@@ -47,7 +47,7 @@ const setIngredients = (state, action) => {
             salad: action.ingredients.salad,
             bacon: action.ingredients.bacon,
             cheese: action.ingredients.cheese,
-            meat: action.ingredients.meat,
+            meat: action.ingredients.meat
         },
         totalPrice: 4,
         error: false,
